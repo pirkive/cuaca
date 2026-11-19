@@ -5,12 +5,17 @@ Aplikasi cuaca Android berbasis Flutter yang memakai data terbuka BMKG. Tugas ma
 - Pencarian lokasi dan favorit 
 - Info gempa terkini 
 - Mode offline (cache) dan tema dinamis 
-## Cara menjalankan 
-1. Pasang Flutter (versi: ISI_VERSI_TIM) dan Android SDK 
-2. git clone https://github.com/pirkive/cuaca.git 
-3. git switch develop 
-4. flutter pub get 
-5. flutter run (tambah --dart-define=USE_MOCK=true untuk data tiruan) 
+## Versi yang dipakai tim
+- Flutter 3.50.x (channel stable)
+- Dart 3.14.x (ikut bundel Flutter)
+- Cek dengan: flutter --version
+## Cara menjalankan
+1. Pasang Flutter 3.50.x dan Android Studio (Android SDK)
+2. git clone https://github.com/pirkive/cuaca.git
+3. cd cuaca
+4. git switch develop
+5. flutter pub get
+6. flutter run  (tambah --dart-define=USE_MOCK=true untuk data tiruan)
 ## Struktur singkat 
 lib/ (app, core, domain, data, services, presentation), assets/, docs/, test/, tool/ 
 ## Alur kontribusi 
@@ -18,11 +23,10 @@ lib/ (app, core, domain, data, services, presentation), assets/, docs/, test/, t
 2. Commit dengan pesan yang jelas 
 3. Buka Pull Request ke develop, minta 1 teman meninjau 
 4. Jangan push langsung ke develop atau main 
-## Sumber data 
-Sumber data: BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) - https://data.bmkg.go.id/ 
-Page 17 of 26
-Dokumen Perencanaan Teknis (Versi Final): Aplikasi Cuaca Mobile BMKG 
-Aplikasi ini bukan aplikasi resmi BMKG. Data wilayah: ISI_SUMBER_DAN_LISENSI. 
+## Sumber data
+- Cuaca dan gempa: BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) - https://data.bmkg.go.id/
+- Kode wilayah: Kemendagri, lewat repositori cahyadsn/wilayah (lisensi dan keakuratan dicek di Tahap 0, hasilnya dicatat di docs/api-notes.md)
+- Aplikasi ini bukan aplikasi resmi BMKG.
 
 ## Tim Cuaca
 | Peran | Nama |
